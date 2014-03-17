@@ -1,0 +1,15 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Program: GetUsb
+ * File: GetUsbGlobal.var
+ * Author: vancurar
+ * Created: March 17, 2014
+ ********************************************************************
+ * Local variables of program GetUsb
+ ********************************************************************)
+(*interface variables*)
+VAR
+	ifName : STRING[20] := 'USBSTICK';
+	UsbHandle : UDINT := 0;
+END_VAR

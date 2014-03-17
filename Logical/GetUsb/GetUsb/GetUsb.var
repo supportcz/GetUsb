@@ -1,0 +1,24 @@
+(********************************************************************
+ * COPYRIGHT -- BuR
+ ********************************************************************
+ * Program: checkusb
+ * File: checkusb.var
+ * Author: geertsc
+ * Created: April 15, 2009
+ ********************************************************************
+ * Local variables of program checkusb
+ ********************************************************************)
+(*internal variables*)
+VAR
+	UsbStep : UsbStep_type := USBWAIT;
+	TON_0 : TON;
+	UsbNodeListGetFub : UsbNodeListGet;
+	usbNodeList : ARRAY[0..9] OF UDINT;
+	usbAttachDetachCount : UDINT := 0;
+	UsbNodeGetFub : UsbNodeGet;
+	usbDevice : usbNode_typ;
+	usbDeviceOld : usbNode_typ := (0);
+	szDevParamName : STRING[255];
+	DevLink_0 : DevLink;
+	DevUnlink_0 : DevUnlink;
+END_VAR
